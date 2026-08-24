@@ -1,0 +1,8 @@
+{
+  "name": "react-router-validated-search-framework-fixture",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "isbot": "5.1.17"
+  }
+}

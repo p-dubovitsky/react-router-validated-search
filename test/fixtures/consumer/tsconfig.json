@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "rootDirs": [".", "./.react-router-validated-search/types", "./.react-router/types"],
+    "strict": true
+  },
+  "include": ["app/**/*", ".react-router-validated-search/types/**/*", ".react-router/types/**/*"]
+}

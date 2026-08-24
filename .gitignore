@@ -1,0 +1,14 @@
+.idea/*
+!.idea/OxfmtSettings.xml
+!.idea/externalDependencies.xml
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.vite-hooks/_/
+node_modules/
+dist/
+.react-router/
+.react-router-validated-search/
+.build/
+coverage/
+.DS_Store

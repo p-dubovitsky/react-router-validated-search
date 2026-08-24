@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "rootDirs": [".", "./.react-router-validated-search/types", "./.react-router/types"],
+    "paths": {
+      "react-router-validated-search": ["../../../src/index.ts"],
+      "react-router-validated-search/internal": ["../../../src/internal/index.ts"],
+      "react-router-validated-search/internal/codec": ["../../../src/internal/codec.ts"]
+    }
+  },
+  "include": ["app/**/*", ".react-router/types/**/*", ".react-router-validated-search/types/**/*"]
+}

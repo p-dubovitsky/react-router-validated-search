@@ -60,6 +60,7 @@ Keep the shared implementation separate and give each route its own thin module:
 import SharedList, { validateSearch as sharedValidateSearch } from './shared-list';
 
 export const validateSearch = sharedValidateSearch;
+
 export default function Products() {
   return <SharedList />;
 }
@@ -524,14 +525,3 @@ Trace imports from `validateSearch`. The validator is client-visible even when t
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for implementation ownership, transforms, runtime invariants, review decisions, and regression checks.
-
-## Release
-
-GitHub Actions runs source checks and installs the packed tarball into a clean
-React Router consumer before every merge. For the first release, add a
-publish-capable `NPM_TOKEN` as a GitHub Actions secret and dispatch `Publish npm`
-manually. After that package exists on npm, configure it as an npm Trusted
-Publisher for `p-dubovitsky/react-router-validated-search`, `publish.yml`, and
-the `npm` environment, with `npm publish` allowed; then remove `NPM_TOKEN`.
-Later releases use the workflow's OIDC token and include provenance without a
-long-lived credential.

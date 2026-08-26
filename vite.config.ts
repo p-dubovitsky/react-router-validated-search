@@ -10,6 +10,10 @@ export default defineConfig({
     singleQuote: true,
   },
   lint: {
+    options: {
+      typeAware: true,
+      typeCheck: true,
+    },
     rules: {
       'typescript/triple-slash-reference': 'off',
     },
@@ -40,7 +44,9 @@ export default defineConfig({
     outDir: 'dist',
     format: 'esm',
     platform: 'neutral',
-    dts: true,
+    dts: {
+      tsgo: true,
+    },
     clean: true,
     deps: {
       neverBundle: [

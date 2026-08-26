@@ -21,7 +21,6 @@ jobs:
           run-install: false
       - run: vp install --frozen-lockfile
       - run: vp run check
-      - run: vp run typecheck
       - run: vp test
       - run: vp pm audit -- --prod --audit-level high
       - run: mkdir -p .artifacts && vp pm pack --pack-destination .artifacts
